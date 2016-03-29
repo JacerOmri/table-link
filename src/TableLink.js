@@ -69,8 +69,6 @@ function addTableLinks(matchString) {
 
         if (element.dataset.target === 'blank') {
             window.open(element.dataset.href).focus();
-        } else if (!element.dataset.target || element.dataset.target === 'self') {
-            location.href = element.dataset.href;
         } else {
             location.href = element.dataset.href;
         }
